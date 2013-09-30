@@ -1,6 +1,6 @@
-# Activerecord::Postgres::Citext
+# ActiveRecord support for citext
 
-TODO: Write a gem description
+Adds support for citext to active_record
 
 ## Installation
 
@@ -18,7 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In a database migration you need to first enable `citext` as an extension, then you can create columns of type citext.
+
+```ruby
+def up
+  enable_extension("citext")                   
+                                             
+  create_table :models, :force => true do |t|  
+    t.citext :name                             
+    t.timestamps                               
+  end                                          
+end
+```
 
 ## Contributing
 
