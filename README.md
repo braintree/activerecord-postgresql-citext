@@ -6,7 +6,7 @@ Adds support for citext to active_record
 
 Add this line to your application's Gemfile:
 
-    gem 'activerecord-postgres-citext'
+    gem 'activerecord-postgresql-citext'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install activerecord-postgres-citext
+    $ gem install activerecord-postgresql-citext
 
 ## Usage
 
