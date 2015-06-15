@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "activerecord-postgresql-citext"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["Braintree"]
   spec.email         = ["code@getbraintree.com"]
   spec.description   = "citext support for rails"
